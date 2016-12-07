@@ -1,0 +1,16 @@
+in:
+  type: gcs
+  bucket: sample_bucket
+  path_prefix: path/to/sample_file  # path the the *.csv or *.tsv file on your GCS bucket
+  auth_method: json_key
+  json_keyfile:
+    content: |
+      {
+        "private_key_id": "6ca8177dc8dd2d7b1aa05dd2a16968bdbde2cd19",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5LEvnLQs5KTto\nElOwGgo0rOHIPu7HW6Cs4IfzgIaP8Bj7IJNALFQdnoGUc4UTxWh8GIaciKwgiYtb\nHCaMThYUVey80fQ0gCM3dc1dr99PbCjFZqjsJaBNl+2lZzv9MIxAcikY4C4OAvpb\nWxCHvWggV3dSb0bHd2Frnxec4maKXFubn/wxQRgv64RCRcwY156zhjDwmeVREkOa\nCxMszvhtJXb2J1L5p7sW/nBG0rMKpVrkkrMmPR4ZxYf+puQ54RUQaql3qOIA1U/e\njeYqVs0kO6kOdW0amqWJclfv6UU+UPhhjx8o4800CV/sViPjAwG/Ye6dDe+bEoGt\nI8AJjrg7AgMBAAECggEAHqummtDMJhidPVyjvexiOl1UPF2oIR8dGuVJv1xPbXHg\nQWAg46Uz/X/uiI8lwKOW7c8GJNFCaVU+3sVn4R9h6tZckt3XrAZ5TstVS6pAu5/3\nlNKvMgX9ajy64QWbWxF6eYYvJm6jUjDOFOmdcE4/+/Ng0SebOpicaz37pEGfqFTh\nqUizQ3pavcYEUX21BSyE6zAH2mUz9S7h4jxGonjJsB9CeSt6xHe5ZAMe0/iZk48B\nrnKy3XJyFaqH/7DM6vDo9hUSnF/frs+lBJvoFf+JNHYEHMlm3SyemadHnqirG3Jr\nyQsfqCg29WWGXgW2EmtS3B9PgdETYNDTlH0/9cIg2QKBgQDjlOmc+2NEFeFIeXYn\ndrdHFhC29HnAjQPmKLSi7fsqPV5h7YJERQn/tp+bvdlm1Bo9sW79xH35AugtzbC/\n+p6zVS+ob0++KpP1JUlXs0HpA7JEsNGb9TEPu8G8cPPAsIgbe5cpdNegXsjmLV/q\nxyBvO5taRQMS36xylikt5Bwg9wKBgQDQS7Wgvrst1ZUdfbhmtKByOWsfUcemTSzJ\nSaqQcWd7bxPJG6d878CReX+dfR/wNa4/escKie0AoF25y0AJytrODRCVmUgWcunW\n9MVgmOjO/wryZBDsRvvtPrqZtHyuUVPP3oSwsOn55s9r3apyXejo5BZNACHyLA1+\nQWLY034V3QKBgG0ayACteEJ85tsy99UlkeovhuXfQLtyH2tpGmh+BQqUDzqNfgUy\nv/9q0wv8MUyd5NKszNQ2LlqB7UOAN/thsFGzRjzO2IEHspU1Qfscgj2uuvk5d9P3\n8YRkdBXeZM19FFNwpeCHFpTYvCG1oSVSP5d0ER9utHGI8AijOqy4jk+zAoGATTNi\nU/udIHXC2LVZ/ScBOJSzcV48IxUDfm9BOlvtwMAAk08emp25v7FKbTKM/djHhluZ\nHfzUzKCjXFNKntaCllAdT3UKVNeud68s4IqL7vx0MDaKVyhQAzR2sLVGaM1XxPly\nMJLBhY/YXOBBZjYMNxUidtOPwVQ2hA7z9e0dFDkCgYBc/3HDyqLeHoBtkD1wmT37\ntB69vh0+T1d7FmLnnwbYBJkcdRxsJZdeG3PxV465XvHWhoTqA4yxIzmtnYPG/sb3\nKHiXAx9UO8IqYsjgBG0UaE82AVr1gjNP2rauoH2bDR9ii2RqJgARsHR7RxCqTl6b\nfTvSIkakS8NFuSNgLaGAjw==\n-----END PRIVATE KEY-----\n",
+        "client_id": "118401557828024071285",
+        "client_email": "treasuredata-con@r-n-dmanagement.iam.gserviceaccount.com",
+        "type": "service_account"
+      }
+out:
+  mode: append
