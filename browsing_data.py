@@ -3,9 +3,9 @@ spark-submit \
 --jars mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar \
 /home/mouna_balghouthi/browsing_activity/browsing_data.py \
 173.194.82.148 \
-morecon \
-moo \
-spark
+DB_name \
+user \
+pass
 
 ##!/usr/bin/env python
 import sys
