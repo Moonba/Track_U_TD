@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
         for act in RDDHistory:
                 if act[3].find("search") > -1:
-                        #td_url = "https://morecon.jp/search?category_id=&orderby=&power%5B%5D=%E5%BA%A6%E3%8
+                        #td_url = "https://website.com/search?category_id=&orderby=&power%5B%5D=%E5%BA%A6%E3%8
                         #len(td_url) = 268 ==> varchar(400)
                         search_filters = act[3].split("&")
                         power = search_filters[2][12:]
@@ -71,7 +71,7 @@ if __name__ == "__main__":
                         referee = act[3].split("=")[1]
                         print "referee", referee
 ************************************************************************************************************************
-
+#Query
 SELECT do.customer_id , do.remote_addr, ubh.td_url , ubh.td_path , ubh.td_referrer
 from dtb_order do 
 join users_browsing_history ubh ON do.remote_addr = ubh.td_ip COLLATE utf8_unicode_ci 
@@ -80,7 +80,7 @@ where do.order_user_agent = ubh.td_user_agent COLLATE utf8_unicode_ci ;
 #Inconvenient Time 
 
 ************************************************************************************************************************
-
+#Thoughts
 TD => sp : automated workflow 
 
 get data from Google cloud sql : automated?
@@ -95,7 +95,7 @@ map(customer_id, values)?
 # Save to cleaned Tables
 
 dfRatings.write \
-    .jdbc(jdbcUrl, "morecon.dtb_ratings",
+    .jdbc(jdbcUrl, "dtb_name.dtb_ratings",
             properties={"user": CLOUDSQL_USER, "password": CLOUDSQL_PWD})
 
 # #[END save_top]
