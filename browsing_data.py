@@ -1,7 +1,7 @@
 spark-submit \
 --driver-class-path mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar \
 --jars mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar \
-/home/mouna_balghouthi/browsing_activity/browsing_data.py \
+/PATH/browsing_activity/browsing_data.py \
 IP_Address \
 DB_name \
 user \
